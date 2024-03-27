@@ -1,0 +1,25 @@
+/* GLOBAL STYLES */
+@import "imports/variables.css";
+
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0px;
+  font-family: Courier, "Courier New", monospace;
+}
+main {
+  margin: 35px;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+}
+
+/* HEADER */
+
+/* FOOTER */
+
+/* MEDIA QUERIES */
