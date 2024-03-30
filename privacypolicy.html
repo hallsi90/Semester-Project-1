@@ -10,7 +10,7 @@
     />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/documents.css" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
     <script
       src="https://kit.fontawesome.com/bf1267e431.js"
       crossorigin="anonymous"
@@ -18,7 +18,59 @@
     <title>Community Science Museum | Privacy Policy</title>
   </head>
   <body>
-    <header></header>
+    <header>
+      <div class="header-logo">
+        <a href="index.html">
+          <img
+            src="logo/community_science_museum_logo.jpg"
+            alt="Community Science Museum logo"
+        /></a>
+      </div>
+
+      <div class="menu">
+        <input type="checkbox" id="hamburger-menu" />
+        <label for="hamburger-menu"
+          ><i
+            class="fa-solid fa-bars hamburger-menu header-icons"
+            aria-label="Menu"
+          ></i
+        ></label>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="exhibitions.html">Exhibitions</a></li>
+            <li><a href="specialevents.html">Special Events</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li><a href="visit.html">Visit Us</a></li>
+            <li><a href="contribute.html">Contribute</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="search">
+        <div class="search-container">
+          <input
+            type="checkbox"
+            id="toggle-search"
+            class="toggle-search-checkbox"
+          />
+          <label for="toggle-search" class="search-icon">
+            <i
+              class="fa-solid fa-magnifying-glass header-icons"
+              aria-label="Go to search bar"
+            ></i>
+          </label>
+          <div class="search-dropdown">
+            <input
+              type="text"
+              placeholder="Search..."
+              class="search-input"
+              id="search-input"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
     <main>
       <h1>Privacy Policy</h1>
       <small>Last Updated: 15.03.24</small>
@@ -105,6 +157,63 @@
       <h2>Governing Law</h2>
       <p>This privacy policy is governed by Norwegian law.</p>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-column">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="exhibitions.html">Exhibitions</a></li>
+            <li><a href="specialevents.html">Special Events</a></li>
+            <li><a href="explore.html">Explore</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <ul>
+            <li><a href="visit.html">Visit us</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="contribute.html">Contribute</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <ul>
+            <li><a href="termsandconditions.html">Terms & Conditions</a></li>
+            <li><a href="privacypolicy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <ul class="social-media-list">
+            <li>
+              <a href="#"
+                ><i class="fa-brands fa-square-instagram footer-icons"></i>
+                Instagram</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-brands fa-facebook footer-icons"></i> Facebook</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-brands fa-tiktok footer-icons"></i> TikTok</a
+              >
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-square-x-twitter footer-icons"></i>
+                X</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-logo">
+          <a href="index.html">
+            <img
+              src="logo/community_science_museum_logo_name.png"
+              alt="Community Science Museum logo with museum name"
+          /></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

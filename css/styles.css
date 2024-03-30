@@ -16,10 +16,203 @@ a {
 }
 img {
   width: 100%;
+  border-radius: 5px;
+}
+h1 {
+  text-align: center;
+  font-size: 2.2rem;
+}
+h2 {
+  font-size: 1.8rem;
+  margin-top: 35px;
+}
+p {
+  font-size: 1.6rem;
+}
+li {
+  font-size: 1.6rem;
+}
+small {
+  font-size: 1.2rem;
+  display: block;
+  text-align: center; /* small is an inline element so I have to make it display block for text-align to work*/
+}
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+.google-map {
+  width: 100%;
+  height: 300px;
+  border: 0;
+  border-radius: 5px;
 }
 
 /* HEADER */
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+  background-color: var(--header-footer-color);
+  color: var(--main-dark-orange-color);
+}
+nav {
+  display: none;
+  position: absolute;
+  top: 105px;
+  right: 0px;
+  left: 0px;
+  z-index: 1000;
+}
+nav ul {
+  padding: 0px;
+}
+nav li {
+  text-align: center;
+  display: block;
+  padding: 15px;
+  background-color: var(--header-footer-color);
+}
+nav a {
+  text-decoration: none;
+  color: var(--main-dark-orange-color);
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.header-logo {
+  flex-grow: 1;
+}
+.header-logo a img {
+  width: 100px;
+}
+.header-icons {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+.menu {
+  order: 1;
+  padding-left: 20px;
+}
+#hamburger-menu {
+  display: none;
+}
+#hamburger-menu:checked ~ nav {
+  display: block;
+}
+.search-container {
+  position: relative;
+}
+.toggle-search-checkbox {
+  display: none;
+}
+.search-dropdown {
+  position: absolute;
+  top: 110%;
+  left: -115px;
+  display: none;
+  z-index: 1000;
+}
+
+.toggle-search-checkbox:checked + .search-icon + .search-dropdown {
+  display: block;
+}
+.search-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid var(--main-dark-orange-color);
+  border-radius: 5px;
+  outline: none;
+  font-family: Courier, "Courier New", monospace;
+}
+
 /* FOOTER */
 
+footer {
+  background-color: var(--header-footer-color);
+  padding: 0px 20px;
+  margin-top: 50px;
+}
+footer li {
+  margin-bottom: 5px;
+  font-size: 1.4rem;
+}
+.footer-container {
+  display: grid;
+  column-gap: 10px;
+  grid-template-columns: 1fr;
+
+  text-align: center;
+  font-weight: bold;
+}
+.footer-column {
+  flex: 1;
+  margin-bottom: 20px;
+}
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-column a {
+  text-decoration: none;
+  color: black;
+}
+.social-media-list li {
+  margin-bottom: 10px;
+}
+
+.footer-logo img {
+  padding: 0px 0px 20px 0px;
+  width: 200px;
+  height: auto;
+  text-align: center;
+}
+.footer-icons {
+  color: var(--main-dark-orange-color);
+}
+
 /* MEDIA QUERIES */
+@media screen and (min-width: 360px) {
+  /* MEDIA QUERY FOOTER */
+
+  .footer-container {
+    text-align: left;
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-logo img {
+    width: 150px;
+  }
+}
+
+@media screen and (min-width: 515px) {
+  /* MEDIA QUERY FOOTER */
+  .footer-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .footer-logo {
+    grid-area: 2/3;
+  }
+}
+@media screen and (min-width: 675px) {
+  /* MEDIA QUERY FOOTER */
+  .footer-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .footer-logo {
+    grid-area: 2/1;
+  }
+}
+@media screen and (min-width: 955px) {
+  /* MEDIA QUERY FOOTER */
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-logo img {
+    width: 200px;
+  }
+  footer {
+    padding: 0px 25px;
+  }
+}
