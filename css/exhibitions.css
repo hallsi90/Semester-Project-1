@@ -1,0 +1,39 @@
+@media screen and (min-width: 1000px) {
+  .exhibition-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 30px;
+    margin-bottom: 50px;
+  }
+  .exhibition-image {
+    align-self: center;
+    justify-self: center;
+    width: auto;
+  }
+  .cosmology-image {
+    grid-column: 2/2;
+    grid-row: 1/3;
+    max-height: 300px;
+  }
+  .evolution-image {
+    grid-column: 1/1;
+    grid-row: 1/3;
+    max-height: 300px;
+  }
+  .biology-image {
+    grid-column: 2/2;
+    grid-row: 1/3;
+    max-height: 350px;
+  }
+  .robotics-image {
+    grid-column: 1/1;
+    grid-row: 1/3;
+    max-height: 400px;
+  }
+  .ecology-image {
+    grid-column: 2/2;
+    grid-row: 1/3;
+    max-height: 300px;
+  }
+}

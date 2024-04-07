@@ -71,7 +71,71 @@
         </div>
       </div>
     </header>
-    <main></main>
+    <main>
+      <h1>Contact Us</h1>
+      <p>
+        We'd love to hear from you! Whether you have a question about our
+        exhibits, guided tours, upcoming events, contributions or anything else,
+        our team is ready to answer all your questions.
+      </p>
+      <p>
+        Fill out the form below, and we'll get back to you as soon as possible.
+      </p>
+      <div class="contact-container">
+        <form action="message_response.html">
+          <label for="About">What do you want to talk to us about?</label>
+          <select name="about" id="about">
+            <option value="exhibitions">Exhibitions</option>
+            <option value="specialevents">Special Events</option>
+            <option value="tours">Guided tours</option>
+            <option value="collections">Collections Department</option>
+            <option value="donations">Donations</option>
+            <option value="volunteer">Volunteer</option>
+            <option value="internships">Internships</option>
+            <option value="termsandconditions">Terms and Conditions</option>
+            <option value="privacypolicy">Privacy Policy</option>
+            <option value="other">Other</option>
+          </select>
+          <label for="name">Your name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="contact-information"
+            required
+          />
+          <label for="email">Your e-mail address</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="contact-information"
+            required
+          />
+          <label for="number">Your phone number</label>
+          <input
+            type="number"
+            name="number"
+            id="number"
+            class="contact-information"
+          />
+          <label for="message">Your message:</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            class="contact-information"
+            required
+          ></textarea>
+          <button class="cta-button" type="submit">Send Message</button>
+        </form>
+      </div>
+      <h2>Contact information</h2>
+      <p>Address: Mobergsbakken 20, 5200 Os</p>
+      <p>Phone: 555-432-123</p>
+      <p>E-mail: csm@gmail.com</p>
+    </main>
     <footer>
       <div class="footer-container">
         <div class="footer-column">

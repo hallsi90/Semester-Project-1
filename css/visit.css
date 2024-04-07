@@ -2,3 +2,46 @@ ul {
   list-style: none;
   padding: 0px;
 }
+.google-map {
+  width: 100%;
+  height: 300px;
+  border: 0;
+  border-radius: 5px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 699px) {
+  .google-map {
+    max-width: 500px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .visit-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    align-items: center;
+  }
+  .map {
+    grid-column: 1/1;
+    grid-row: 1/3;
+  }
+  .google-map {
+    height: 400px;
+  }
+  .location {
+    grid-column: 2/2;
+    grid-row: 1/1;
+  }
+  .hours {
+    grid-column: 2/2;
+    grid-row: 2/2;
+  }
+  h1 {
+    margin-bottom: 30px;
+  }
+  .location h2 {
+    margin-top: 0px;
+  }
+}

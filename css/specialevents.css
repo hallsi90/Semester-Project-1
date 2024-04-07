@@ -1,0 +1,29 @@
+@media screen and (min-width: 1035px) {
+  .exhibition-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 30px;
+    margin-bottom: 50px;
+  }
+  .exhibition-image {
+    align-self: center;
+    justify-self: center;
+    width: auto;
+  }
+  .lecture-image {
+    grid-column: 2/2;
+    grid-row: 1/3;
+    max-height: 300px;
+  }
+  .nightmuseum-image {
+    grid-column: 1/1;
+    grid-row: 1/3;
+    max-height: 300px;
+  }
+  .energetica-image {
+    grid-column: 2/2;
+    grid-row: 1/3;
+    max-height: 350px;
+  }
+}
