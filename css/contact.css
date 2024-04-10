@@ -1,0 +1,27 @@
+.contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-container form {
+  background-color: var(--header-footer-color);
+  color: black;
+  display: grid;
+  margin-top: 10px;
+  padding: 20px;
+  border-radius: 5px;
+}
+.contact-container input,
+.contact-container textarea,
+.contact-container select {
+  padding: 5px;
+  border: solid 2px var(--main-dark-orange-color);
+  border-radius: 5px;
+  margin: 10px 0px;
+  font-size: 1.6rem;
+  font-family: Courier, "Courier New", monospace;
+}
+.contact-container label {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
