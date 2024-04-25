@@ -41,6 +41,12 @@ small {
 a {
   text-decoration: none;
   font-weight: bold;
+  color: var(--main-dark-orange-color);
+}
+hr {
+  border: 4px double var(--main-dark-orange-color);
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .cta-button {
   display: flex;
@@ -58,7 +64,7 @@ a {
 }
 .cta-button:hover {
   color: black;
-  background-color: var(--header-footer-color);
+  background-color: var(--main-yellow-color);
   border: 2px solid var(--main-dark-orange-color);
   transition: ease-in-out 200ms;
 }
@@ -81,7 +87,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 25px;
-  background-color: var(--header-footer-color);
+  background-color: var(--main-yellow-color);
   color: var(--main-dark-orange-color);
 }
 nav {
@@ -91,7 +97,7 @@ nav {
   right: 0px;
   left: 0px;
   z-index: 1000;
-  background-color: var(--header-footer-color);
+  background-color: var(--main-yellow-color);
 }
 nav ul {
   padding: 0px;
@@ -156,7 +162,7 @@ nav a {
 /* FOOTER */
 
 footer {
-  background-color: var(--header-footer-color);
+  background-color: var(--main-yellow-color);
   padding: 0px 20px;
   margin-top: 50px;
 }
