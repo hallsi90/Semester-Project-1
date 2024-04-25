@@ -1,4 +1,4 @@
-@media screen and (min-width: 1035px) {
+@media screen and (min-width: 1200px) {
   .exhibition-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -14,16 +14,16 @@
   .lecture-image {
     grid-column: 2/2;
     grid-row: 1/3;
-    max-height: 300px;
+    max-height: 350px;
   }
   .nightmuseum-image {
     grid-column: 1/1;
     grid-row: 1/3;
-    max-height: 300px;
+    max-height: 500px;
   }
   .energetica-image {
     grid-column: 2/2;
     grid-row: 1/3;
-    max-height: 350px;
+    max-height: 400px;
   }
 }

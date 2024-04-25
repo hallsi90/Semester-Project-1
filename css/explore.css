@@ -3,7 +3,7 @@
   margin: 0 auto;
 }
 @media screen and (min-width: 500px) {
-  .explore-image {
+  .explore-image-container {
     display: flex;
     align-items: center;
     justify-content: center;
