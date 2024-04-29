@@ -81,7 +81,7 @@ hr {
 /* HEADER */
 
 header {
-  position: sticky;
+  display: block;
   top: 0;
   display: flex;
   justify-content: space-between;
@@ -98,6 +98,7 @@ nav {
   left: 0px;
   z-index: 1000;
   background-color: var(--main-yellow-color);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
 }
 nav ul {
   padding: 0px;
