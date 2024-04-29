@@ -85,22 +85,24 @@
   display: none;
 }
 
+/* Special events*/
+
 .event-1 {
   z-index: 2;
   opacity: 1;
-  background-image: url("/images/andrew-ruiz-348421.jpg");
+  background-image: url("/images/special_events/andrew-ruiz-348421.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .event-2 {
-  background-image: url("/images/roberto-nickson-396152-edited.jpg");
+  background-image: url("/images/special_events/roberto-nickson-396152-edited.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .event-3 {
-  background-image: url("/images/scientific-2040795_1280.jpg");
+  background-image: url("/images/special_events/scientific-2040795_1280.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -117,3 +119,49 @@
   z-index: 3;
   opacity: 1;
 }
+
+/* Exhibitions */
+
+.exhibition-1 {
+  z-index: 2;
+  opacity: 1;
+  background-image: url("/images/exhibitions/celso-405219.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.exhibition-2 {
+  background-image: url("/images/exhibitions/skeleton-414543_1920.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.exhibition-3 {
+  background-image: url("/images/exhibitions/heart-2607178_1920.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.exhibition-4 {
+  background-image: url("/images/exhibitions/samuel-zeller-158996-edited.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.exhibition-5 {
+  background-image: url("/images/exhibitions/genoa-956405_1920.jpg");
+  background-size: cover;
+  background-position: center;
+}
+*:target ~ .exhibition-1 {
+  opacity: 0;
+}
+
+#exhibition-1:target ~ .exhibition-1 {
+  opacity: 1;
+}
+#exhibition-2:target ~ .exhibition-2,
+#exhibition-3:target ~ .exhibition-3,
+#exhibition-4:target ~ .exhibition-4,
+#exhibition-5:target ~ .exhibition-5 {
+  z-index: 3;
+  opacity: 1;
+}
+
+/* Explore */

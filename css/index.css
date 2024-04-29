@@ -2,9 +2,12 @@ main {
   margin: 0;
 }
 h2,
-h3 {
+h3,
+p {
   text-align: center;
+  margin: 30px;
 }
+
 .introduction-content-container {
   position: relative;
   height: 20vh;
@@ -57,3 +60,8 @@ h3 {
 }
 
 /* CAROUSEL */
+
+/*  MAP  */
+.map-index {
+  margin: 30px;
+}
