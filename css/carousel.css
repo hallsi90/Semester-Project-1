@@ -90,19 +90,19 @@
 .event-1 {
   z-index: 2;
   opacity: 1;
-  background-image: url("/images/special_events/andrew-ruiz-348421.jpg");
+  background-image: url("../images/special_events/andrew-ruiz-348421.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .event-2 {
-  background-image: url("/images/special_events/roberto-nickson-396152-edited.jpg");
+  background-image: url("../images/special_events/roberto-nickson-396152-edited.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .event-3 {
-  background-image: url("/images/special_events/scientific-2040795_1280.jpg");
+  background-image: url("../images/special_events/scientific-2040795_1280.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -125,27 +125,27 @@
 .exhibition-1 {
   z-index: 2;
   opacity: 1;
-  background-image: url("/images/exhibitions/celso-405219.jpg");
+  background-image: url("../images/exhibitions/celso-405219.jpg");
   background-size: cover;
   background-position: center;
 }
 .exhibition-2 {
-  background-image: url("/images/exhibitions/skeleton-414543_1920.jpg");
+  background-image: url("../images/exhibitions/skeleton-414543_1920.jpg");
   background-size: cover;
   background-position: center;
 }
 .exhibition-3 {
-  background-image: url("/images/exhibitions/heart-2607178_1920.jpg");
+  background-image: url("../images/exhibitions/heart-2607178_1920.jpg");
   background-size: cover;
   background-position: center;
 }
 .exhibition-4 {
-  background-image: url("/images/exhibitions/samuel-zeller-158996-edited.jpg");
+  background-image: url("../images/exhibitions/samuel-zeller-158996-edited.jpg");
   background-size: cover;
   background-position: center;
 }
 .exhibition-5 {
-  background-image: url("/images/exhibitions/genoa-956405_1920.jpg");
+  background-image: url("../images/exhibitions/genoa-956405_1920.jpg");
   background-size: cover;
   background-position: center;
 }
