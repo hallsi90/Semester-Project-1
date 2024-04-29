@@ -73,6 +73,7 @@ hr {
   height: 300px;
   border: 0;
   border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .exhibition-image,
 .explore-image {
@@ -93,12 +94,12 @@ header {
 nav {
   display: none;
   position: absolute;
-  top: 105px;
+  top: 108px;
   right: 0px;
   left: 0px;
   z-index: 1000;
   background-color: var(--main-yellow-color);
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 60px 40px 10px;
 }
 nav ul {
   padding: 0px;
