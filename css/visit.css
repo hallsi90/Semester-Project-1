@@ -2,10 +2,13 @@ ul {
   list-style: none;
   padding: 0px;
 }
-
+.map-visitus {
+  width: 100%;
+  height: 300px;
+}
 /* MEDIA QUERIES */
 @media screen and (max-width: 699px) {
-  .google-map {
+  .map-visitus {
     max-width: 500px;
   }
 }
@@ -16,12 +19,13 @@ ul {
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
     align-items: center;
+    margin-bottom: 50px;
   }
-  .map-visitus {
+  .map-container {
     grid-column: 1/1;
     grid-row: 1/3;
   }
-  .google-map {
+  .map-visitus {
     height: 400px;
   }
   .location {
@@ -37,5 +41,10 @@ ul {
   }
   .location h2 {
     margin-top: 0px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .visit-container {
+    column-gap: 50px;
   }
 }

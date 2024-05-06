@@ -2,6 +2,9 @@
   max-width: 1000px;
   margin: 0 auto;
 }
+.teachers-image {
+  box-shadow: none;
+}
 @media screen and (min-width: 500px) {
   .explore-image-container {
     display: flex;
@@ -15,5 +18,10 @@
   .teachers-image {
     max-height: 500px;
     width: auto;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .explore-image {
+    margin: 50px 0px;
   }
 }
