@@ -24,7 +24,6 @@
   left: 50%;
   transform: translateX(-50%);
   color: white;
-  font-size: 1.5rem;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.9);
   padding: 10px 0px;
@@ -35,8 +34,8 @@
 
 .textbox h3:hover {
   color: white;
-  background-color: rgba(249, 162, 2, 0.9);
-  font-size: 1.8rem;
+  background-color: var(--main-orange-color, 0.9);
+  font-size: 2rem;
 }
 
 .arrow {
@@ -46,7 +45,7 @@
   padding: 6px;
 }
 .arrow:hover {
-  border-color: var(--main-dark-orange-color);
+  border-color: var(--main-orange-color);
   border-width: 0 7px 7px 0;
 }
 
@@ -94,19 +93,19 @@
 .event-1 {
   z-index: 2;
   opacity: 1;
-  background-image: url("../images/special_events/andrew-ruiz-348421.jpg");
+  background-image: url("../images/special_events/aeroneutics/aeroneutics_lecture.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .event-2 {
-  background-image: url("../images/special_events/roberto-nickson-396152-edited.jpg");
+  background-image: url("../images/special_events/sleep_over/sleep_over_event.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .event-3 {
-  background-image: url("../images/special_events/scientific-2040795_1280.jpg");
+  background-image: url("../images/special_events/energetica/energetica_event.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -129,27 +128,27 @@
 .exhibition-1 {
   z-index: 2;
   opacity: 1;
-  background-image: url("../images/exhibitions/celso-405219.jpg");
+  background-image: url("../images/exhibitions/cosmology/planets.jpg");
   background-size: cover;
   background-position: center;
 }
 .exhibition-2 {
-  background-image: url("../images/exhibitions/skeleton-414543_1920.jpg");
+  background-image: url("../images/exhibitions/evolution/skeleton.jpg");
   background-size: cover;
   background-position: center;
 }
 .exhibition-3 {
-  background-image: url("../images/exhibitions/heart-2607178_1920.jpg");
+  background-image: url("../images/exhibitions/biology_medicine/heart.jpg");
   background-size: cover;
   background-position: center;
 }
 .exhibition-4 {
-  background-image: url("../images/exhibitions/samuel-zeller-158996-edited.jpg");
+  background-image: url("../images/exhibitions/robotics_ai/samuel_zeller.jpg");
   background-size: cover;
   background-position: center;
 }
 .exhibition-5 {
-  background-image: url("../images/exhibitions/genoa-956405_1920.jpg");
+  background-image: url("../images/exhibitions/ecology/ant.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -173,17 +172,17 @@
 .explore-1 {
   z-index: 2;
   opacity: 1;
-  background-image: url("../images/explore/learn-2405206_1920.jpg");
+  background-image: url("../images/explore/kids/girl_learning.jpg");
   background-size: cover;
   background-position: center;
 }
 .explore-2 {
-  background-image: url("../images/explore/teacher-2816112.jpg");
+  background-image: url("../images/explore/teachers/teacher.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: top;
 }
 .explore-3 {
-  background-image: url("../images/explore/lab-512503_1920.jpg");
+  background-image: url("../images/explore/researchers/lab_drawing.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -211,8 +210,11 @@
     margin: 50px 0px;
   }
   .textbox h3 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     padding: 10px 0px;
+  }
+  .textbox h3:hover {
+    font-size: 2.2rem;
   }
 }
 @media screen and (min-width: 600px) {
@@ -254,9 +256,12 @@
     width: 900px;
   }
   .textbox h3 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     padding: 20px 0px;
     width: 50%;
+  }
+  .textbox h3:hover {
+    font-size: 3rem;
   }
 }
 @media screen and (min-width: 1100px) {

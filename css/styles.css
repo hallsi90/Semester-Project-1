@@ -27,6 +27,9 @@ h2 {
   font-size: 2rem;
   margin-top: 35px;
 }
+h3 {
+  font-size: 1.8rem;
+}
 
 p {
   font-size: 1.6rem;
@@ -42,31 +45,31 @@ small {
 a {
   text-decoration: none;
   font-weight: bold;
-  color: var(--main-dark-orange-color);
+  color: var(--red-color);
 }
 hr {
-  border: 4px double var(--main-dark-orange-color);
+  border: 4px double var(--dark-orange-color);
   margin-top: 50px;
   margin-bottom: 50px;
 }
 .cta-button {
   display: flex;
-  color: black;
-  background-color: var(--main-dark-orange-color);
+  color: var(--main-black-color);
+  background-color: var(--main-orange-color);
   font-weight: bold;
   font-family: Courier, "Courier New", monospace;
   font-size: 2rem;
   cursor: pointer;
-  box-shadow: 5px 5px 5px black;
-  border: none;
+  box-shadow: 5px 5px 5px var(--main-black-color);
+  border: 2px solid var(--main-black-color);
   border-radius: 10px;
   padding: 20px;
   margin: 30px auto;
 }
 .cta-button:hover {
-  color: black;
-  background-color: var(--main-yellow-color);
-  border: 2px solid var(--main-dark-orange-color);
+  color: var(--main-white-color);
+  background-color: var(--dark-blue-color);
+  border: 3px solid var(--main-white-color);
   transition: ease-in-out 200ms;
 }
 .google-map {
@@ -87,17 +90,17 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 25px;
-  background-color: var(--main-yellow-color);
-  color: var(--main-dark-orange-color);
+  background-color: var(--main-blue-color);
+  color: var(--main-orange-color);
 }
 nav {
   display: none;
   position: absolute;
-  top: 108px;
+  top: 130px;
   right: 0px;
   left: 0px;
   z-index: 1000;
-  background-color: var(--main-yellow-color);
+  background-color: var(--main-blue-color);
   box-shadow: rgba(0, 0, 0, 0.8) 0px 60px 40px 10px;
 }
 nav ul {
@@ -110,7 +113,7 @@ nav li {
 }
 nav a {
   text-decoration: none;
-  color: var(--main-dark-orange-color);
+  color: var(--main-white-color);
   font-size: 1.8rem;
   font-weight: bold;
 }
@@ -154,7 +157,7 @@ nav a {
 .search-input {
   width: 100%;
   padding: 8px;
-  border: 1px solid var(--main-dark-orange-color);
+  border: 1px solid var(--main-orange-color);
   border-radius: 5px;
   outline: none;
   font-family: Courier, "Courier New", monospace;
@@ -163,7 +166,7 @@ nav a {
 /* FOOTER */
 
 footer {
-  background-color: var(--main-yellow-color);
+  background-color: var(--lightest-blue-color);
   padding: 0px 20px;
   margin-top: 50px;
 }
@@ -188,7 +191,7 @@ footer li {
 }
 .footer-column a {
   text-decoration: none;
-  color: black;
+  color: var(--main-black-color);
 }
 .social-media-list li {
   margin-bottom: 10px;
@@ -201,7 +204,7 @@ footer li {
   text-align: center;
 }
 .footer-icons {
-  color: var(--main-dark-orange-color);
+  color: var(--main-orange-color);
 }
 
 /* MEDIA QUERIES */

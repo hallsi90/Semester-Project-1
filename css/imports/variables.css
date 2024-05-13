@@ -1,4 +1,27 @@
 :root {
-  --main-dark-orange-color: rgb(249, 162, 2);
-  --main-yellow-color: #fffadc;
+  --main-white-color: #fff;
+  --main-black-color: #000;
+
+  --dark-blue-color: #01163a;
+  --main-blue-color: #359cc9;
+  --light-blue-color: #47b1db;
+  --lightest-blue-color: #7dd8f5;
+
+  --red-color: #e13419;
+
+  --main-orange-color: #ffa103;
+  --dark-orange-color: #fe8d10;
+
+  --main-yellow-color: #fec207;
 }
+/* MORE COLOR OPTIONS
+
+
+
+  --light-orange-color: #FFBD02; 
+
+  --red-orange-color-darker: #FF651C;
+  --red-orange-color-light: #FF7E3E;
+  --red-orange-color-lightest: #FF965A;
+
+*/

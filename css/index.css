@@ -14,7 +14,7 @@ p {
 }
 .background-image {
   height: 100%;
-  background-image: url("../images/scott-webb-102825.jpg");
+  background-image: url("../images//museum/museum.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -39,8 +39,9 @@ p {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #ffe3b0;
+  background-color: var(--main-orange-color);
   padding: 10px;
+  font-weight: bold;
 }
 .short-cut-container {
   background-color: var(--main-yellow-color);
@@ -55,7 +56,7 @@ p {
   padding: 5px 0px;
 }
 .short-cut-container a {
-  color: black;
+  color: var(--main-black-color);
 }
 
 /* CAROUSEL */
