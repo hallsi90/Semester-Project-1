@@ -45,7 +45,7 @@ small {
 a {
   text-decoration: none;
   font-weight: bold;
-  color: var(--red-color);
+  color: var(--dark-blue-color);
 }
 hr {
   border: 4px double var(--dark-orange-color);
@@ -96,7 +96,7 @@ header {
 nav {
   display: none;
   position: absolute;
-  top: 130px;
+  top: 129px;
   right: 0px;
   left: 0px;
   z-index: 1000;
@@ -199,7 +199,7 @@ footer li {
 
 .footer-logo img {
   padding: 0px 0px 20px 0px;
-  width: 200px;
+  width: 150px;
   height: auto;
   text-align: center;
 }
@@ -214,7 +214,8 @@ footer li {
     grid-template-columns: 1fr 1fr;
   }
   .footer-logo img {
-    width: 150px;
+    margin: 0;
+    width: 100px;
   }
 }
 @media screen and (min-width: 450px) {
@@ -266,6 +267,9 @@ footer li {
   .footer-logo {
     grid-area: 2/1;
   }
+  footer li {
+    font-size: 1.5rem;
+  }
 }
 @media screen and (min-width: 955px) {
   /* MEDIA QUERY FOOTER */
@@ -275,8 +279,7 @@ footer li {
     text-align: left;
   }
   .footer-logo img {
-    width: 200px;
-    margin: 0px;
+    padding-top: 5px;
   }
   footer {
     padding: 10px 30px;
@@ -287,6 +290,9 @@ footer li {
   /* MEDIA QUERY FOOTER */
   footer {
     padding: 10px 50px;
+  }
+  footer li {
+    font-size: 1.6rem;
   }
   /* MEDIA QUERY GLOBAL */
   main {
