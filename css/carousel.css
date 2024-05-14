@@ -87,7 +87,12 @@
 [id^="event"] {
   display: none;
 }
-
+[Id^="exhibition"] {
+  display: none;
+}
+[Id^="explore"] {
+  display: none;
+}
 /* Special events*/
 
 .event-1 {
