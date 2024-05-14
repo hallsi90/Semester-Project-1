@@ -2,6 +2,11 @@ h2,
 p {
   text-align: center;
 }
+ul {
+  list-style: none;
+  padding: 0px;
+  text-align: center;
+}
 .contact-container {
   align-items: center;
   justify-content: center;
@@ -53,6 +58,15 @@ p {
   .cta-button {
     font-size: 3rem;
     padding: 25px;
+  }
+}
+@media screen and (min-width: 815px) {
+  .information-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    align-items: top;
+    margin-bottom: 50px;
   }
 }
 @media screen and (min-width: 900px) {
