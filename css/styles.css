@@ -1,60 +1,71 @@
-/* GLOBAL STYLES */
+/*********** GLOBAL STYLES ***********/
+
 @import "imports/variables.css";
 
 html {
   font-size: 62.5%;
 }
+
 body {
   margin: 0px;
   font-family: Courier, "Courier New", monospace;
 }
+
 main {
   margin: 35px;
 }
+
 a {
   text-decoration: none;
 }
+
 img {
   width: 100%;
   border-radius: 5px;
   margin: 20px 0px;
 }
+
 h1 {
   text-align: center;
   font-size: 2.6rem;
 }
+
 h2 {
   font-size: 2rem;
   margin-top: 35px;
 }
+
 h3 {
   font-size: 1.8rem;
 }
 
-p {
-  font-size: 1.6rem;
-}
+p,
 li {
   font-size: 1.6rem;
 }
+
 small {
   font-size: 1.2rem;
   display: block;
   text-align: center; /* small is an inline element so I have to make it display block for text-align to work*/
 }
+
 a {
   text-decoration: none;
   font-weight: bold;
   color: var(--dark-blue-color);
 }
+
 a:hover {
   color: var(--main-orange-color);
 }
+
 hr {
   border: 4px double var(--dark-orange-color);
   margin-top: 50px;
   margin-bottom: 50px;
 }
+
 .cta-button {
   display: flex;
   color: var(--main-black-color);
@@ -69,23 +80,26 @@ hr {
   padding: 20px;
   margin: 30px auto;
 }
+
 .cta-button:hover {
   color: var(--main-white-color);
   background-color: var(--dark-blue-color);
   border: 3px solid var(--main-white-color);
   transition: ease-in-out 200ms;
 }
+
 .google-map {
   border: none;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
 .exhibition-image,
 .explore-image {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-/* HEADER */
+/*********** HEADER ***********/
 
 header {
   display: block;
@@ -97,6 +111,7 @@ header {
   background-color: var(--main-blue-color);
   color: var(--main-orange-color);
 }
+
 nav {
   display: none;
   position: absolute;
@@ -107,47 +122,59 @@ nav {
   background-color: var(--main-blue-color);
   box-shadow: rgba(0, 0, 0, 0.8) 0px 60px 40px 10px;
 }
+
 nav ul {
   padding: 0px;
 }
+
 nav li {
   text-align: center;
   display: block;
   padding: 15px;
 }
+
 nav a {
   text-decoration: none;
   color: var(--main-white-color);
   font-size: 1.8rem;
   font-weight: bold;
 }
+
 .header-logo {
   flex-grow: 1;
 }
+
 .header-logo a img {
   width: 100px;
   margin: 0;
 }
+
 .header-icons {
   font-size: 2.5rem;
   cursor: pointer;
 }
+
 .menu {
   order: 1;
   padding-left: 20px;
 }
+
 #hamburger-menu {
   display: none;
 }
+
 #hamburger-menu:checked ~ nav {
   display: block;
 }
+
 .search-container {
   position: relative;
 }
+
 .toggle-search-checkbox {
   display: none;
 }
+
 .search-dropdown {
   position: absolute;
   top: 110%;
@@ -155,9 +182,11 @@ nav a {
   display: none;
   z-index: 1000;
 }
+
 .toggle-search-checkbox:checked + .search-icon + .search-dropdown {
   display: block;
 }
+
 .search-input {
   width: 100%;
   padding: 8px;
@@ -167,17 +196,19 @@ nav a {
   font-family: Courier, "Courier New", monospace;
 }
 
-/* FOOTER */
+/*********** FOOTER ***********/
 
 footer {
   background-color: var(--lightest-blue-color);
   padding: 0px 20px;
   margin-top: 50px;
 }
+
 footer li {
   margin-bottom: 5px;
   font-size: 1.4rem;
 }
+
 .footer-container {
   display: grid;
   column-gap: 10px;
@@ -185,21 +216,26 @@ footer li {
   text-align: center;
   font-weight: bold;
 }
+
 .footer-column {
   flex: 1;
   margin-bottom: 20px;
 }
+
 .footer-column ul {
   list-style: none;
   padding: 0;
 }
+
 .footer-column a {
   text-decoration: none;
   color: var(--main-black-color);
 }
+
 .footer-column a:hover {
   color: var(--main-white-color);
 }
+
 .social-media-list li {
   margin-bottom: 10px;
 }
@@ -210,11 +246,13 @@ footer li {
   height: auto;
   text-align: center;
 }
+
 .footer-icons {
   color: var(--main-orange-color);
 }
 
-/* MEDIA QUERIES */
+/*********** MEDIA QUERIES ***********/
+
 @media screen and (min-width: 360px) {
   /* MEDIA QUERY FOOTER */
   .footer-container {
@@ -225,6 +263,7 @@ footer li {
     width: 100px;
   }
 }
+
 @media screen and (min-width: 450px) {
   /* MEDIA QUERY GLOBAL */
   h1 {
@@ -237,7 +276,6 @@ footer li {
   li {
     font-size: 1.8rem;
   }
-
   small {
     font-size: 1.5rem;
   }
@@ -252,6 +290,7 @@ footer li {
     grid-area: 2/3;
   }
 }
+
 @media screen and (min-width: 600px) {
   /* MEDIA QUERY GLOBAL */
   main {
@@ -266,6 +305,7 @@ footer li {
     padding-bottom: 25px;
   }
 }
+
 @media screen and (min-width: 675px) {
   /* MEDIA QUERY FOOTER */
   .footer-container {
@@ -278,6 +318,7 @@ footer li {
     font-size: 1.5rem;
   }
 }
+
 @media screen and (min-width: 955px) {
   /* MEDIA QUERY FOOTER */
   .footer-container {
@@ -293,6 +334,7 @@ footer li {
     margin-top: 80px;
   }
 }
+
 @media screen and (min-width: 1000px) {
   /* MEDIA QUERY FOOTER */
   footer {
@@ -301,6 +343,7 @@ footer li {
   footer li {
     font-size: 1.6rem;
   }
+
   /* MEDIA QUERY GLOBAL */
   main {
     margin: 50px 100px;

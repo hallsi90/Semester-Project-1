@@ -1,12 +1,17 @@
+/*********** VISIT US ***********/
+
 ul {
   list-style: none;
   padding: 0px;
 }
+
 .map-visitus {
   width: 100%;
   height: 300px;
 }
-/* MEDIA QUERIES */
+
+/*********** MEDIA QUERIES ***********/
+
 @media screen and (max-width: 699px) {
   .map-visitus {
     max-width: 500px;
@@ -43,6 +48,7 @@ ul {
     margin-top: 0px;
   }
 }
+
 @media screen and (min-width: 1000px) {
   .visit-container {
     column-gap: 50px;
