@@ -7,9 +7,7 @@ p {
   text-align: center;
   margin: 30px;
 }
-p a :hover {
-  color: var(--main-orange-color);
-}
+
 .introduction-content-container {
   position: relative;
   height: 20vh;
