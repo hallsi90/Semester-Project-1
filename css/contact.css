@@ -26,6 +26,7 @@ ul {
   padding: 20px;
   border: solid 2px var(--main-orange-color);
   border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .contact-container input,

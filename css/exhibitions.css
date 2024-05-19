@@ -1,7 +1,6 @@
 /*********** EXHIBITIONS ***********/
 
 /*********** MEDIA QUERIES ***********/
-
 @media screen and (min-width: 1200px) {
   .exhibition-container {
     display: grid;
