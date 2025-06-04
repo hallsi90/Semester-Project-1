@@ -1,0 +1,108 @@
+/*********** HEADER ***********/
+
+header {
+  display: block;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+  background-color: var(--main-blue-color);
+  color: var(--main-orange-color);
+}
+
+nav {
+  display: none;
+  position: absolute;
+  top: 129px;
+  right: 0px;
+  left: 0px;
+  z-index: 1000;
+  background-color: var(--main-blue-color);
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 60px 40px 10px;
+}
+
+nav ul {
+  padding: 0px;
+}
+
+nav li {
+  text-align: center;
+  display: block;
+  padding: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--main-white-color);
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.header-logo {
+  flex-grow: 1;
+}
+
+.header-logo a img {
+  width: 100px;
+  margin: 0;
+}
+
+.header-icons {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.menu {
+  order: 1;
+  padding-left: 20px;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+  display: block;
+}
+
+.search-container {
+  position: relative;
+}
+
+.toggle-search-checkbox {
+  display: none;
+}
+
+.search-dropdown {
+  position: absolute;
+  top: 110%;
+  left: -115px;
+  display: none;
+  z-index: 1000;
+}
+
+.toggle-search-checkbox:checked + .search-icon + .search-dropdown {
+  display: block;
+}
+
+.search-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid var(--main-orange-color);
+  border-radius: 5px;
+  outline: none;
+  font-family: Courier, "Courier New", monospace;
+}
+
+/*********** MEDIA QUERIES ***********/
+
+@media screen and (min-width: 600px) {
+  /* MEDIA QUERY HEADER */
+  nav a {
+    font-size: 2.5rem;
+  }
+  nav {
+    padding-bottom: 25px;
+  }
+}
