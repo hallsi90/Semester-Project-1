@@ -21,12 +21,17 @@ a {
   text-decoration: none;
 }
 
-img {
-  width: 100%;
-  border-radius: 5px;
-  margin: 20px 0px;
+ul {
+  list-style: none;
+  padding: 0;
 }
 
+.legal-list {
+  list-style: disc;
+  padding-left: 40px;
+}
+
+/* Font sizes */
 h1 {
   text-align: center;
   font-size: 2.6rem;
@@ -34,7 +39,6 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  margin-top: 35px;
 }
 
 h3 {
@@ -43,7 +47,11 @@ h3 {
 
 p,
 li {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+}
+
+.footer-column li {
+  font-size: 1.2rem;
 }
 
 small {
@@ -52,6 +60,7 @@ small {
   text-align: center; /* small is an inline element so I have to make it display block for text-align to work*/
 }
 
+/* Links */
 a {
   text-decoration: none;
   font-weight: bold;
@@ -62,19 +71,21 @@ a:hover {
   color: var(--main-orange-color);
 }
 
+/* Design details */
 hr {
   border: 4px double var(--dark-orange-color);
   margin-top: 50px;
   margin-bottom: 50px;
 }
 
+/* BUTTON*/
 .cta-button {
   display: flex;
   color: var(--main-black-color);
   background-color: var(--main-orange-color);
   font-weight: bold;
   font-family: Courier, "Courier New", monospace;
-  font-size: 2rem;
+  font-size: 1.4rem;
   cursor: pointer;
   box-shadow: 5px 5px 5px var(--main-black-color);
   border: 2px solid var(--main-black-color);
@@ -90,10 +101,18 @@ hr {
   transition: ease-in-out 200ms;
 }
 
+/* MAPS */
 .google-map {
   border: none;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* IMAGES */
+img {
+  width: 100%;
+  border-radius: 5px;
+  margin: 20px 0px;
 }
 
 .exhibition-image,
@@ -103,40 +122,66 @@ hr {
 
 /*********** MEDIA QUERIES ***********/
 
-@media screen and (min-width: 450px) {
-  /* MEDIA QUERY GLOBAL */
+@media (min-width: 768px) {
+  main {
+    margin: 50px;
+  }
+
   h1 {
-    font-size: 4.8rem;
+    font-size: 2.8rem;
   }
+
   h2 {
-    font-size: 3rem;
+    font-size: 2.2rem;
   }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  p,
+  li {
+    font-size: 1.6rem;
+  }
+
+  small,
+  .footer-column li {
+    font-size: 1.4rem;
+  }
+
+  .cta-button {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    margin: 50px 100px;
+  }
+
+  h1 {
+    font-size: 3.2rem;
+  }
+
+  h2 {
+    font-size: 2.4rem;
+  }
+
+  h3 {
+    font-size: 2.2rem;
+  }
+
   p,
   li {
     font-size: 1.8rem;
   }
-  small {
-    font-size: 1.5rem;
-  }
-}
 
-@media screen and (min-width: 600px) {
-  /* MEDIA QUERY GLOBAL */
-  main {
-    margin: 50px;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  /* MEDIA QUERY GLOBAL */
-  main {
-    margin: 50px 100px;
-  }
-  p,
-  li {
-    font-size: 2rem;
-  }
-  small {
+  small,
+  .footer-column li {
     font-size: 1.6rem;
+  }
+
+  .cta-button {
+    font-size: 1.8rem;
   }
 }
