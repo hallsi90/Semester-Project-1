@@ -8,7 +8,6 @@ footer {
 
 footer li {
   margin-bottom: 5px;
-  font-size: 1.4rem;
 }
 
 .footer-container {
@@ -83,9 +82,6 @@ footer li {
   .footer-logo {
     grid-area: 2/1;
   }
-  footer li {
-    font-size: 1.5rem;
-  }
 }
 @media screen and (min-width: 955px) {
   /* MEDIA QUERY FOOTER */
@@ -106,8 +102,5 @@ footer li {
   /* MEDIA QUERY FOOTER */
   footer {
     padding: 10px 50px;
-  }
-  footer li {
-    font-size: 1.6rem;
   }
 }
