@@ -1,19 +1,38 @@
-/*********** GLOBAL STYLES ***********/
+/* ===============================
+   GLOBAL STYLES FILE — MOBILE FIRST
+   =============================== */
+
+/* ===============================
+   IMPORTS
+   =============================== */
 
 @import "imports/variables.css";
 @import "imports/header.css";
 @import "imports/footer.css";
 
+/* ===============================
+   RESET AND BASE STYLES
+   =============================== */
+
+/* Set base font size to 62.5% (10px) so 1rem = 10px */
 html {
   font-size: 62.5%;
 }
 
 body {
-  margin: 0px;
+  display: flex; /* Layout utility: ensures footer stays at bottom of viewport on short pages */
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  background-color: var(--main-white-color);
+  color: var(--main-black-color);
   font-family: Courier, "Courier New", monospace;
+  font-size: 1.4rem;
+  line-height: 1.5;
 }
 
 main {
+  flex-grow: 1; /* Allow main content to grow and push footer down */
   margin: 30px;
 }
 
@@ -29,47 +48,6 @@ ul {
 .legal-list {
   list-style: disc;
   padding-left: 40px;
-}
-
-/* Font sizes */
-h1 {
-  text-align: center;
-  font-size: 2.6rem;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-h3 {
-  font-size: 1.8rem;
-}
-
-p,
-li {
-  font-size: 1.4rem;
-}
-
-.footer-column li {
-  font-size: 1.2rem;
-}
-
-small {
-  font-size: 1.2rem;
-  display: block;
-  text-align: center; /* small is an inline element so I have to make it display block for text-align to work*/
-}
-
-input,
-textarea,
-select,
-label {
-  font-size: 1.4rem;
-  font-family: Courier, "Courier New", monospace;
-}
-
-label {
-  font-weight: bold;
 }
 
 /* Links */
@@ -90,30 +68,79 @@ hr {
   margin-bottom: 50px;
 }
 
-/* BUTTON*/
+/* ===============================
+   TYPOGRAPHY 
+   =============================== */
+
+/* Font sizes */
+h1,
+.background-image h1 {
+  text-align: center;
+  font-size: 2.6rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+p,
+li,
+input,
+textarea,
+select,
+label,
+.cta-button {
+  font-size: 1.4rem;
+}
+
+.footer-column li {
+  font-size: 1.2rem;
+}
+
+small {
+  font-size: 1.2rem;
+  display: block;
+  text-align: center; /* small is an inline element so I have to make it display block for text-align to work*/
+}
+
+/* Font weight */
+label,
+.cta-button {
+  font-weight: bold;
+}
+
+/* ===============================
+   BUTTON 
+   =============================== */
+
 .cta-button {
   display: flex;
   color: var(--main-black-color);
   background-color: var(--main-orange-color);
-  font-weight: bold;
   font-family: Courier, "Courier New", monospace;
-  font-size: 1.4rem;
   cursor: pointer;
   box-shadow: 5px 5px 5px var(--main-black-color);
   border: 2px solid var(--main-black-color);
   border-radius: 10px;
   padding: 20px;
   margin: 30px auto;
+  transition: ease-in-out 200ms;
 }
 
 .cta-button:hover {
   color: var(--main-white-color);
   background-color: var(--dark-blue-color);
   border: 3px solid var(--main-white-color);
-  transition: ease-in-out 200ms;
 }
 
-/* MAPS */
+/* ===============================
+   MAPS
+   =============================== */
+
 .google-map {
   border: none;
   border-radius: 5px;
@@ -126,11 +153,15 @@ hr {
   margin: 40px 0;
 }
 
+/* Map container for homepage (different main margin) */
 .map-container-index {
   margin: 30px;
 }
 
-/* IMAGES */
+/* ===============================
+   IMAGES
+   =============================== */
+
 img {
   width: 100%;
   border-radius: 5px;
@@ -142,11 +173,19 @@ img {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-/*********** MEDIA QUERIES ***********/
+/* ===============================
+    MEDIA QUERIES
+   =============================== */
 
+/* TABLET 768px - 1024px */
 @media (min-width: 768px) {
   main {
     margin: 50px;
+  }
+
+  /* Typography */
+  .background-image h1 {
+    font-size: 3rem;
   }
 
   h1 {
@@ -162,7 +201,12 @@ img {
   }
 
   p,
-  li {
+  li,
+  input,
+  textarea,
+  select,
+  label,
+  .cta-button {
     font-size: 1.6rem;
   }
 
@@ -171,17 +215,7 @@ img {
     font-size: 1.4rem;
   }
 
-  input,
-  textarea,
-  select,
-  label {
-    font-size: 1.6rem;
-  }
-
-  .cta-button {
-    font-size: 1.6rem;
-  }
-
+  /* Maps */
   .map-container-index {
     margin: 40px;
   }
@@ -191,13 +225,19 @@ img {
   }
 }
 
+/* DESKTOP (1024px and up) */
 @media (min-width: 1024px) {
   main {
     margin: 50px 100px;
   }
 
+  /* Typography */
+  .background-image h1 {
+    font-size: 3.5rem;
+  }
+
   h1 {
-    font-size: 3.2rem;
+    font-size: 3rem;
   }
 
   h2 {
@@ -209,7 +249,8 @@ img {
   }
 
   p,
-  li {
+  li,
+  .cta-button {
     font-size: 1.8rem;
   }
 
@@ -218,10 +259,7 @@ img {
     font-size: 1.6rem;
   }
 
-  .cta-button {
-    font-size: 1.8rem;
-  }
-
+  /* Maps */
   .map-container-index {
     margin: 50px;
   }
