@@ -1,3 +1,7 @@
+/* ===============================
+   STYLES FOR THE HOMEPAGE — MOBILE FIRST
+   =============================== */
+
 main {
   margin: 0;
 }
@@ -9,20 +13,25 @@ p {
   margin: 30px;
 }
 
-/*********** INTRODUCTION ***********/
+/* ===============================
+   INTRODUCTION CONTENT
+   =============================== */
 
+/* Introduction content container */
 .introduction-content-container {
   position: relative;
   height: 20vh;
 }
 
+/* Background image */
 .background-image {
   height: 100%;
-  background-image: url("../images//museum/museum.jpg");
+  background-image: url("../images/museum/museum.jpg");
   background-size: cover;
   background-position: center;
 }
 
+/* Text on top of background image */
 .background-image h1 {
   color: white;
   margin: 10px;
@@ -30,6 +39,7 @@ p {
   z-index: 2; /* Ensure h1 is above the overlay */
 }
 
+/* Transparent overlay on background image to make the text more visible */
 .overlay {
   position: absolute;
   width: 100%;
@@ -41,6 +51,7 @@ p {
   z-index: 1; /* Ensure the overlay is below the h1*/
 }
 
+/* Opening hours container */
 .opening-hours-container {
   display: flex;
   justify-content: space-around;
@@ -50,19 +61,22 @@ p {
   font-weight: bold;
 }
 
+/* Short cut container (links to visit us, explore and get involved) */
 .short-cut-container {
   background-color: var(--main-yellow-color);
   padding: 10px;
 }
 
+/* Short cut list items */
 .short-cut-container ul {
   text-align: center;
 }
 
 .short-cut-container li {
-  padding: 5px 0px;
+  padding: 5px 0;
 }
 
+/* Short cut links */
 .short-cut-container a {
   color: var(--main-black-color);
 }
@@ -72,34 +86,24 @@ p {
   color: var(--main-white-color);
 }
 
-/*********** MAP ***********/
+/* ===============================
+   MEDIA QUERIES
+   =============================== */
 
-/*********** MEDIA QUERIES ***********/
-
-@media (min-width: 500px) {
+/* TABLET 768px - 1024px */
+@media (min-width: 768px) {
   .introduction-content-container {
     height: 30vh;
   }
-  .background-image h1 {
-    margin: 20px;
-  }
-}
 
-@media (min-width: 700px) {
   .opening-hours-container {
     padding: 20px;
   }
 }
 
-@media (min-width: 1000px) {
+/* DESKTOP (1024px and up) */
+@media (min-width: 1024px) {
   .introduction-content-container {
     height: 40vh;
-  }
-  .background-image h1 {
-    margin: 30px;
-  }
-
-  .short-cut-container a:hover {
-    font-size: 2.5rem;
   }
 }
