@@ -1,4 +1,6 @@
-/*********** CONTACT US PAGE ***********/
+/* ===============================
+   STYLES FOR CONTACT US PAGE — MOBILE FIRST
+   =============================== */
 
 h2,
 p,
@@ -6,12 +8,13 @@ ul {
   text-align: center;
 }
 
-/*********** CONTACT FORM ***********/
+/* ===============================
+   CONTACT FORM
+   =============================== */
 
 .contact-container {
-  align-items: center;
-  justify-content: center;
-  margin: 30px 0px;
+  margin: 0 auto;
+  max-width: 1000px;
 }
 
 .contact-container form {
@@ -34,8 +37,11 @@ ul {
   margin: 10px 0px;
 }
 
-/*********** MEDIA QUERIES ***********/
+/* ===============================
+   MEDIA QUERIES
+   =============================== */
 
+/* TABLET (768px and up) */
 @media (min-width: 768px) {
   .information-container {
     display: grid;
