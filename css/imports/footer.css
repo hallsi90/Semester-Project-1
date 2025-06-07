@@ -1,4 +1,6 @@
-/*********** FOOTER ***********/
+/* ===============================
+   FOOTER STYLES FILE — MOBILE FIRST
+   =============================== */
 
 footer {
   background-color: var(--lightest-blue-color);
@@ -36,8 +38,11 @@ footer li {
   color: var(--main-orange-color);
 }
 
-/*********** MEDIA QUERIES ***********/
+/* ===============================
+    MEDIA QUERIES
+   =============================== */
 
+/* TABLET (768px - 1024px) */
 @media (min-width: 768px) {
   .footer-container {
     grid-template-columns: 1fr 1fr;
@@ -48,6 +53,7 @@ footer li {
   }
 }
 
+/* DESKTOP (1024px and up) */
 @media (min-width: 1024px) {
   footer {
     padding: 10px 30px;
