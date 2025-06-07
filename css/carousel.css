@@ -1,5 +1,8 @@
-/*********** CAROUSEL ***********/
+/* ===============================
+   CAROUSEL STYLES FOR HOME PAGE index.html — MOBILE FIRST
+   =============================== */
 
+/* Carousel container */
 .carousel-wrapper {
   position: relative;
   display: block;
@@ -7,6 +10,7 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+/* Carousel slide items */
 .carousel-event {
   position: absolute;
   top: 0;
@@ -17,32 +21,36 @@
   transition: all 1s ease-in-out;
 }
 
+/* Text overlay (title on image) */
 .textbox h3 {
   margin: 0;
   position: absolute;
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
-  color: white;
+  color: var(--main-white-color);
   text-align: center;
   background-color: rgba(0, 0, 0, 0.9);
   padding: 10px 0px;
   border-radius: 0.5em;
   width: 80%;
-  max-width: 600px;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
 .textbox h3:hover {
-  color: white;
-  background-color: var(--main-orange-color, 0.9);
-  font-size: 2rem;
+  color: var(--main-black-color);
+  background-color: var(--main-orange-transparent);
+  transform: translateX(-50%) scale(1.1);
 }
 
+/* CAROUSEL ARROWS - PREVIOUS AND NEXT */
 .arrow {
   border: solid #eee;
   border-width: 0 5px 5px 0;
   display: inline-block;
   padding: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
 .arrow:hover {
@@ -50,6 +58,7 @@
   border-width: 0 7px 7px 0;
 }
 
+/* Previous arrow */
 .arrow-prev-container {
   border-radius: 50%;
   width: 50px;
@@ -68,6 +77,7 @@
   transform: translateY(-50%) rotate(135deg);
 }
 
+/* Next arrow */
 .arrow-next-container {
   border-radius: 50%;
   width: 50px;
@@ -85,87 +95,105 @@
   transform: translateY(-50%) rotate(-45deg);
 }
 
+/* Hide all targets by default */
 [id^="event"] {
   display: none;
 }
-[Id^="exhibition"] {
-  display: none;
-}
-[Id^="explore"] {
+
+[id^="exhibition"] {
   display: none;
 }
 
-/*********** CAROUSEL Special Events ***********/
+[id^="explore"] {
+  display: none;
+}
+
+/* Shared image settings for all slides */
+.event-1,
+.event-2,
+.event-3,
+.exhibition-1,
+.exhibition-2,
+.exhibition-3,
+.exhibition-4,
+.exhibition-5,
+.explore-1,
+.explore-2,
+.explore-3 {
+  background-size: cover;
+  background-position: center;
+}
+
+/* ===================================
+   Special Events Carousel
+=================================== */
 
 .event-1 {
   z-index: 2;
   opacity: 1;
   background-image: url("../images/special_events/aeroneutics/aeroneutics_lecture.jpg");
-  background-size: cover;
-  background-position: center;
 }
 
 .event-2 {
   background-image: url("../images/special_events/night_in_the_museum/sleep_over_event.jpg");
-  background-size: cover;
-  background-position: center;
 }
 
 .event-3 {
   background-image: url("../images/special_events/energetica/energetica_event.jpg");
-  background-size: cover;
-  background-position: center;
 }
 
+/* Hide event-1 when another event is targeted */
 *:target ~ .event-1 {
   opacity: 0;
 }
 
+/* Show specific event slide when targeted */
 #event-1:target ~ .event-1 {
   opacity: 1;
 }
+
 #event-2:target ~ .event-2,
 #event-3:target ~ .event-3 {
   z-index: 3;
   opacity: 1;
 }
 
-/*********** CAROUSEL Exhibitions ***********/
+/* ===================================
+   Exhibitions Carousel
+=================================== */
 
 .exhibition-1 {
   z-index: 2;
   opacity: 1;
   background-image: url("../images/exhibitions/cosmology/planets.jpg");
-  background-size: cover;
-  background-position: center;
 }
+
 .exhibition-2 {
   background-image: url("../images/exhibitions/evolution/skeleton.jpg");
-  background-size: cover;
-  background-position: center;
 }
+
 .exhibition-3 {
   background-image: url("../images/exhibitions/biology_medicine/heart.jpg");
-  background-size: cover;
-  background-position: center;
 }
+
 .exhibition-4 {
   background-image: url("../images/exhibitions/robotics_ai/samuel_zeller.jpg");
-  background-size: cover;
-  background-position: center;
 }
+
 .exhibition-5 {
   background-image: url("../images/exhibitions/ecology/ant.jpg");
-  background-size: cover;
-  background-position: center;
 }
+
+/* Hide exhibition-1 when another event is targeted */
 *:target ~ .exhibition-1 {
   opacity: 0;
 }
 
+/* Show specific event slide when targeted */
 #exhibition-1:target ~ .exhibition-1 {
   opacity: 1;
 }
+
 #exhibition-2:target ~ .exhibition-2,
 #exhibition-3:target ~ .exhibition-3,
 #exhibition-4:target ~ .exhibition-4,
@@ -174,135 +202,84 @@
   opacity: 1;
 }
 
-/*********** CAROUSEL Explore ***********/
+/* ===================================
+   Explore Carousel
+=================================== */
 
 .explore-1 {
   z-index: 2;
   opacity: 1;
   background-image: url("../images/explore/kids/girl_learning.jpg");
-  background-size: cover;
-  background-position: center;
 }
+
 .explore-2 {
   background-image: url("../images/explore/teachers/teacher.jpg");
-  background-size: cover;
   background-position: top;
 }
+
 .explore-3 {
   background-image: url("../images/explore/researchers/lab_drawing.jpg");
-  background-size: cover;
-  background-position: center;
 }
+
+/* Hide explore-1 when another event is targeted */
 *:target ~ .explore-1 {
   opacity: 0;
 }
 
+/* Show specific event slide when targeted */
 #explore-1:target ~ .explore-1 {
   opacity: 1;
 }
+
 #explore-2:target ~ .explore-2,
 #explore-3:target ~ .explore-3 {
   z-index: 3;
   opacity: 1;
 }
 
-/*********** MEDIA QUERIES CAROUSEL ***********/
+/* ===============================
+   MEDIA QUERIES
+   =============================== */
 
-@media screen and (min-width: 400px) {
-  .textbox h3 {
-    width: 60%;
-  }
-}
-
-@media screen and (min-width: 500px) {
-  .carousel-wrapper {
-    height: 300px;
-    margin: 50px 0px;
-  }
-  .textbox h3 {
-    font-size: 2rem;
-    padding: 10px 0px;
-  }
-  .textbox h3:hover {
-    font-size: 2.2rem;
-  }
-}
-
-@media screen and (min-width: 600px) {
-  .carousel-wrapper {
-    height: 350px;
-  }
-  .textbox h3 {
-    padding: 15px 0px;
-  }
-}
-
-@media screen and (min-width: 700px) {
+/* TABLET 768px - 1024px */
+@media (min-width: 768px) {
   .carousel-wrapper {
     height: 400px;
   }
-}
 
-@media screen and (min-width: 800px) {
-  .carousel-wrapper {
-    height: 450px;
-    width: 700px;
-    margin: 50px auto;
-    border-radius: 10px;
+  .textbox h3 {
+    padding: 15px 0px;
+    width: 50%;
   }
-  .carousel-event {
-    border-radius: 10px;
-  }
+
   .arrow {
     border-width: 0 7px 7px 0;
     padding: 10px;
   }
-}
 
-@media screen and (min-width: 900px) {
-  .carousel-wrapper {
-    height: 500px;
-    width: 800px;
+  .arrow:hover {
+    border-width: 0 9px 9px 0;
   }
 }
 
-@media screen and (min-width: 1000px) {
+/* DESKTOP (1024px - 1200px) */
+@media (min-width: 1024px) {
   .carousel-wrapper {
+    height: 450px;
     width: 900px;
+    margin: 50px auto;
+    border-radius: 10px;
   }
-  .textbox h3 {
-    font-size: 2.5rem;
-    padding: 20px 0px;
-    width: 50%;
-  }
-  .textbox h3:hover {
-    font-size: 3rem;
+
+  .carousel-event {
+    border-radius: 10px;
   }
 }
 
-@media screen and (min-width: 1100px) {
-  .carousel-wrapper {
-    width: 1000px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
+/* LARGE DESKTOP (1024px and up) */
+@media (min-width: 1200px) {
   .carousel-wrapper {
     height: 550px;
     width: 1100px;
-  }
-}
-
-@media screen and (min-width: 1300px) {
-  .carousel-wrapper {
-    height: 600px;
-    width: 1200px;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  .carousel-wrapper {
-    height: 700px;
-    width: 1300px;
   }
 }
