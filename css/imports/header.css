@@ -1,24 +1,27 @@
-/*********** HEADER ***********/
+/* ===============================
+   HEADER STYLES FILE — MOBILE FIRST
+   =============================== */
 
+/* Header container */
 header {
-  display: block;
-  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  text-align: center;
-  padding: 10px 25px;
+  gap: 20px;
+  padding: 10px 25px 5px 25px;
   background-color: var(--main-blue-color);
   color: var(--main-orange-color);
 }
 
+/* Navigation */
 nav {
   display: none;
   position: absolute;
-  top: 129px;
+  top: 75px;
   right: 0px;
   left: 0px;
   z-index: 1000;
+  text-align: center;
   background-color: var(--main-blue-color);
   box-shadow: rgba(0, 0, 0, 0.8) 0px 60px 40px 10px;
 }
@@ -30,27 +33,28 @@ nav li {
 
 nav a {
   color: var(--main-white-color);
-  font-size: 1.8rem;
-  font-weight: bold;
 }
 
+/* Logo */
 .header-logo {
-  flex-grow: 1;
+  margin-right: auto;
+  margin-bottom: 0;
 }
 
 .header-logo a img {
-  width: 100px;
   margin: 0;
+  width: 50px;
 }
 
+/* Icons (hamburger and search) */
 .header-icons {
   font-size: 2.5rem;
   cursor: pointer;
 }
 
+/* Hamburger menu */
 .menu {
   order: 1;
-  padding-left: 20px;
 }
 
 #hamburger-menu {
@@ -61,6 +65,7 @@ nav a {
   display: block;
 }
 
+/* Search */
 .search-container {
   position: relative;
 }
@@ -90,14 +95,25 @@ nav a {
   font-family: Courier, "Courier New", monospace;
 }
 
-/*********** MEDIA QUERIES ***********/
+/* ===============================
+    MEDIA QUERIES
+   =============================== */
 
-@media screen and (min-width: 600px) {
-  /* MEDIA QUERY HEADER */
-  nav a {
-    font-size: 2.5rem;
+/* TABLET (768px and up) */
+@media screen and (min-width: 768px) {
+  header {
+    gap: 30px;
   }
+
   nav {
-    padding-bottom: 25px;
+    top: 107px;
+  }
+
+  .header-logo a img {
+    width: 80px;
+  }
+
+  .header-icons {
+    font-size: 3rem;
   }
 }
