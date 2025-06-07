@@ -1,33 +1,41 @@
-/*********** EXPLORE ***********/
+/* ===============================
+   STYLES FOR EXPLORE PAGE — MOBILE FIRST
+   =============================== */
 
 .explore-container {
   max-width: 1000px;
   margin: 0 auto;
 }
 
+.explore-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .teachers-image {
   box-shadow: none;
 }
 
-/*********** MEDIA QUERIES ***********/
+/* ===============================
+   MEDIA QUERIES
+   =============================== */
 
-@media screen and (min-width: 500px) {
-  .explore-image-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+/* TABLET (768px - 1024px) */
+@media (min-width: 768px) {
   .kids-image {
     max-height: 500px;
     width: auto;
   }
+
   .teachers-image {
     max-height: 500px;
     width: auto;
   }
 }
 
-@media screen and (min-width: 1000px) {
+/* DESKTOP (1024px and up) */
+@media (min-width: 1024px) {
   .explore-image {
     margin: 50px 0px;
   }
