@@ -16,9 +16,6 @@ This project simulates working with a real-world client brief, focusing on build
 
 - **HTML5** - Semantic and accessible structure
 - **CSS3** – Responsive layout using Flexbox and Grid
-- ✅ No frameworks or JavaScript used
-- ✅ All imagery optimized for performance and licensing
-- ✅ Design tailored to appeal to young learners without being overly childish
 
 ---
 
